@@ -15,10 +15,10 @@ export default class UploadContainer extends Component {
                 <FontAwesomeIcon className='icon' icon={faCloudUpload} />Arraste arquivos aqui ...</UploadMessage>
         }
         if (isDragReject) {
-            return <UploadMessage type="error"><FontAwesomeIcon icon={faFileCircleQuestion} />Arquivo não suportado</UploadMessage>
+            return <UploadMessage type="error"><FontAwesomeIcon className='icon' icon={faFileCircleQuestion} />Arquivo não suportado</UploadMessage>
         }
 
-        return <UploadMessage type="success"><FontAwesomeIcon icon={faFileCircleCheck} />Solte os arquivos aqui</UploadMessage>
+        return <UploadMessage type="success"><FontAwesomeIcon className='icon' icon={faFileCircleCheck} />Solte os arquivos aqui</UploadMessage>
     }
     render() {
         return (
