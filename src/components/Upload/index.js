@@ -25,7 +25,7 @@ export default class UploadContainer extends Component {
             <div className='bg p-3'>
                 <span>Faça o upload do arquivo .csv para o processamento do relatório:</span>
                 <Separator></Separator>
-                <Dropzone accept="image/*" onDropAccepted={() => { }}>
+                <Dropzone accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" onDropAccepted={() => { }}>
                     {({ getRootProps, getInputProps, isDragActive, isDragReject }) => (
                         <DropContainer
                             {...getRootProps()}
@@ -39,7 +39,7 @@ export default class UploadContainer extends Component {
                 </Dropzone>
                 <Separator></Separator>
                 <div className='d-flex flex-row-reverse '>
-                    <Button className='d-flex align-items-center' variant="success">Gerar Relatórios<FontAwesomeIcon className='icon' icon={faPlay} /></Button>{' '}
+                    <Button className='d-flex align-items-center' variant="success">Gerar Relatórios<FontAwesomeIcon className='icon_btn' icon={faPlay} /></Button>{' '}
                 </div>
             </div>
         )
